@@ -1,0 +1,4 @@
+Se ha registrado un nuevo estudiante: 
+ Nombre: brian
+ Cédula: undefined
+ Curso 2: Física, tiene una duración de 50 horas, y un precio de $130000

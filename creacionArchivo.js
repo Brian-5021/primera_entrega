@@ -18,4 +18,8 @@ let archivotxt = (estudiante) => {
     })
 }
 
+app.use(express.static(__dirname + '/'))
+
+
+
 archivotxt(argv);

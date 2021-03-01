@@ -2,9 +2,10 @@
     "name": "proyectonodejs",
     "version": "1.0.0",
     "description": "proyectonodejs",
-    "main": "index.js",
+    "main": "inscripcion.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
@@ -23,6 +24,8 @@
     },
     "homepage": "https://github.com/Brian-5021/primera_entrega#readme",
     "dependencies": {
+        "express": "^4.17.1",
+        "webpack-dev-server": "^3.11.2",
         "yargs": "^16.2.0"
     }
 }

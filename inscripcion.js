@@ -2,6 +2,8 @@ const { cursos } = require('./data');
 const { MostrarData } = require('./mostrarinfo');
 const { argv, opciones } = require('./matricular');
 const fs = require('fs');
+var express = require('express')
+var app = express()
 
 if (argv.id == null) {
     console.log(MostrarData());
@@ -29,10 +31,14 @@ if (argv.id == null) {
                 (console.log('La identificación del curso no se encuentra, por favor revisa nuestra información y digita el id correcto: \n' + imprimirDatos()));
             } else {
                 console.log('Qué bien se ha creado el archivo con la información!!!');
+                app.get('/', function(req, res) {
+                    res.send(texto)
+                })
             }
 
         })
     }
 
     archivotxt(argv);
+    app.listen(3000)
 }
